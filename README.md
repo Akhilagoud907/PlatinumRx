@@ -12,6 +12,7 @@ The project demonstrates skills in **data handling, transformation, and analysis
 ---
 
 ## 📂 Project Structure
+```
 Data_analyst_assignment/
 │
 ├── sql/
@@ -28,7 +29,7 @@ Data_analyst_assignment/
 │ └── Analysis.xlsx
 │
 └── README.md
-
+```
 ---
 
 ## 🗄️ SQL Section
