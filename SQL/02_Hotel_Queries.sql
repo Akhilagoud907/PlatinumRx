@@ -10,13 +10,11 @@ INSERT INTO users VALUES
 ('21wrcxuy-67erfn', 'John Doe', '9712345678', 'john.doe@example.com', 'Street Y, ABC City'),
 ('31abcdxy-78ghjk', 'Jane Smith', '9812345678', 'jane.smith@example.com', 'Street Z, XYZ City');
 
-
 -- ITEMS
 INSERT INTO items VALUES
 ('itm-a9e8-q8fu', 'Tawa Paratha', 18),
 ('itm-a07vh-aer8', 'Mix Veg', 89),
 ('itm-w978-23u4', 'Paneer Curry', 150);
-
 
 -- BOOKINGS
 INSERT INTO bookings VALUES
@@ -24,7 +22,6 @@ INSERT INTO bookings VALUES
 ('bk-q034-q4o', '2021-10-15 10:15:00', 'rm-xh12-ert9', '31abcdxy-78ghjk'),
 ('bk-new-1', '2021-10-20 11:00:00', 'rm-new-1', '21wrcxuy-67erfn'),
 ('bk-11aa-22bb', '2021-11-10 09:00:00', 'rm-zz99-yy88', '21wrcxuy-67erfn');
-
 
 -- BOOKING COMMERCIALS
 INSERT INTO booking_commercials VALUES
@@ -35,7 +32,6 @@ INSERT INTO booking_commercials VALUES
 ('44abc-xyz-9999', 'bk-11aa-22bb', 'bl-77tt-8899', '2021-11-10 13:00:00', 'itm-a9e8-q8fu', 5),
 ('55def-xyz-8888', 'bk-11aa-22bb', 'bl-77tt-8899', '2021-11-10 13:00:00', 'itm-a07vh-aer8', 2);
 
-
 -- Q1: Last booked room per user
 SELECT user_id, room_no
 FROM (
@@ -44,7 +40,6 @@ FROM (
     FROM bookings
 ) t
 WHERE rn = 1;
-
 
 -- Q2: Total billing in November 2021
 SELECT 
@@ -55,7 +50,6 @@ JOIN items i ON bc.item_id = i.item_id
 WHERE MONTH(bc.bill_date) = 11
   AND YEAR(bc.bill_date) = 2021
 GROUP BY bc.booking_id;
-
 
 -- Q3: Bills > 1000 in October 2021
 SELECT 
@@ -86,7 +80,6 @@ WITH item_counts AS (
 )
 SELECT * FROM item_counts
 WHERE rnk_desc = 1 OR rnk_asc = 1;
-
 
 -- Q5: Second highest bill per month
 WITH bills AS (
