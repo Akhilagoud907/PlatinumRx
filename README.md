@@ -99,9 +99,8 @@ A strong foundation in data analysis
 Ability to work across multiple tools
 Problem-solving and logical thinking skills
 
-### Excel_sheet:
-``` https://docs.google.com/spreadsheets/d/1bFVhgVvdCtwAd2G6z6H7r1sKuYUxIduj/edit?usp=drivesdk&ouid=100628168324515698519&rtpof=true&sd=true
-```
+### Excel Sheet
+[View Analysis.xlsx](https://docs.google.com/spreadsheets/d/1bFVhgVvdCtwAd2G6z6H7r1sKuYUxIduj/edit?usp=drivesdk&ouid=100628168324515698519&rtpof=true&sd=true)
 
 👩‍💻 Author
 Akhila
